@@ -1,30 +1,102 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-	<title>Dice Game</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="description" content="Description" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-</head>
+	<head>
+		<title>Dice Game</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Description" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
 
-<body>
+	<body>
 
-	<header>
-		<nav>
-		</nav>
-	</header>
+		<header>
+			<nav>
+			</nav>
+		</header>
 
-	<h1>Farkle</h1>
+		<div>
 
-	<!-- content goes here -->
-	<p id=diceRolled></p>
-	<button onclick="shuffleArray(dice)">Shake Dice</button>
-	<button onclick="getElementById('diceRolled').innerHTML = showDiceRolled()">Roll Dice</button>
+			<div id="header-wrapper">
+				<h1>Farkle</h1>
 
-	<footer>
-	</footer>
-	<script src="script.js"></script>
-</body>
+				<!-- content goes here -->
+				<img id="dice_1" ondblclick="unSelectDie('dice_1')" onclick="selectDie('dice_1')" src="images/one.jpg" alt="One" title="One" height="42" width="42" />
+				<img id="dice_2" ondblclick="unSelectDie('dice_2')" onclick="selectDie('dice_2')" src="images/two.jpg" alt="Two" title="Two" height="42" width="42" />
+				<img id="dice_3" ondblclick="unSelectDie('dice_3')" onclick="selectDie('dice_3')" src="images/three.jpg" alt="Three" title="Three" height="42" width="42" />
+				<img id="dice_4" ondblclick="unSelectDie('dice_4')" onclick="selectDie('dice_4')" src="images/four.jpg" alt="Four" title="Four" height="42" width="42" />
+				<img id="dice_5" ondblclick="unSelectDie('dice_5')" onclick="selectDie('dice_5')" src="images/five.jpg" alt="Five" title="Five" height="42" width="42" />
+				<img id="dice_6" ondblclick="unSelectDie('dice_6')" onclick="selectDie('dice_6')" src="images/six.jpg" alt="Six" title="Six" height="42" width="42" />
+				<p></p>
+				<button onclick="shuffleArray(dice)">Shake Dice</button>
+				<button id="rollbt" onclick="showDiceRolled()">Roll Dice</button>
+			</div>
+			<div id="body-wrapper">
+				<h1>Score Sheet</h1>
+				<table>
+					<tr>
+						<th />
+							<th>Player 1</th>
+							<th>Player 2</th>
+							<th>Player 3</th>
+							<th>Player 4</th>
+						</tr>
+						<tr>
+							<td>Round 1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 3</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 5</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 6</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Round 7</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
 
-</html>
+			<footer>
+			</footer>
+			<script src="script.js"></script>
+		</body>
+
+	</html>
